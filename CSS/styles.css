@@ -4,6 +4,25 @@ body{
     color:#212121;
 }
 
+
+.container{
+   min-width: 1200px;
+   
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.page-header{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
+    min-height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
 .first-letters {
     color: #2196F3;
 }
@@ -18,9 +37,12 @@ body{
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
+    
 }
 .list-menu{
-    list-style-type: none;
+    list-style: none;
+    display: flex;
+    
 }
 .header-menu {
     text-decoration: none;
@@ -31,6 +53,7 @@ body{
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    margin-left: 46px;
 }
 .header-menu:hover {
     color:#2196F3;
@@ -39,6 +62,9 @@ body{
 .header-menu:focus{
     color:#2196F3;
     text-decoration: none;
+}
+.contact{
+    margin-left: 50px;
 }
 .e-mail{
     text-decoration: none;
@@ -66,13 +92,21 @@ body{
 .phone-number:hover{
     color:#2196F3;
 }
+.filtr-button{
+    list-style-type: none;
+    display: flex;  
+    justify-content: center;
+    }
 .filtr{
     background-color:#F5F4FA;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: 0px;
     cursor: pointer;
+    margin-left: 8px;
     }
+
+
 .filtr:hover{
     background-color:#2196F3;
     color:  #FFFFFF;
@@ -101,8 +135,19 @@ body{
     width: 121px;
     height: 38px;
     }
+
 .project-list{
-    list-style-type: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.product{
+    margin-left: 10px;
+    margin-top: 10px;
+    flex-basis: calc((100% - 30px) / 3);
 }
 .project{
     box-sizing: border-box;
@@ -127,11 +172,14 @@ body{
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
-        }
+    }
 .footer{
     background-color:  #2F303A;
-    width: 1600px;
+    min-height: 252px;
+    display: flex;
+    flex-direction: column;
     }
+
 .logo-footer{
     text-decoration: none;
     color: black;
@@ -178,14 +226,13 @@ body{
     line-height: 24px;
     letter-spacing: 0.03em;
     }
-.filtr-button{
-    list-style-type: none;  
-    }
+
     /* CSS styles for the studio website */
 .service-section{
     background: #2F303A;
-    width: 1600px;
+    min-height: 600px;
     }
+
 .main-title{
     color: #FFFFFF;
     width: 696px;
@@ -196,27 +243,34 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     }
+
 .order-button{
+    /*botton*/
     background: #2196F3;
     width: 200px;
     height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0px;
+    /*text in botton*/
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color:#FFFFFF;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
     }
+
+
 .lorem-list{
     list-style-type: none;
+    display: flex;
+
 }
 .title{
     width: 270px;
@@ -244,6 +298,10 @@ body{
 .photo-profession{
     list-style-type: none;
     mix-blend-mode: normal;
+    display: flex;
+    margin-left: 30px;
+    justify-content: space-between;
+    
 }
 .section-title{
     font-weight: 700;
@@ -252,9 +310,13 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
 }
-.team{
-    list-style-type: none;
+.team-section{
     background: #F5F4FA;
+    min-height: 648px;
+}
+.team{
+    list-style: none;
+    display: flex;
 }
 .person{
     width: 270px;
@@ -262,6 +324,7 @@ body{
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    margin-left: 30px;
 }
 .name{
     width: 72px;
