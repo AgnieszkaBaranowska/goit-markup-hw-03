@@ -6,7 +6,9 @@ body{
 
 .container{
    width: 1200px;
+   margin: 0 auto;
 }
+
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -17,10 +19,10 @@ body{
     background-color: #FFFFFF;
     border-bottom: 1px solid #ECECEC;
     height: 80px;
-    display: inline-flex;
-    justify-content:space-around;
+    display: flex;
+    justify-content:space-between;
     align-items: center;
-    margin: 0px;
+    flex-direction: row;
 }
 
 /* logo */
@@ -45,7 +47,9 @@ body{
     list-style: none;
     display: flex;
     padding: 0px;
-}
+    margin: 0px;
+    }
+
 .header-menu {
     text-decoration: none;
     color: #212121;
@@ -66,9 +70,7 @@ body{
     text-decoration: none;
 }
 /* kontakty w nagłówku */
-.contact{
-    margin-left: 50px;
-  }
+
 .e-mail{
     text-decoration: none;
     color: #757575;
@@ -78,7 +80,7 @@ body{
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    padding-right: 25px;
+    margin-right: 25px;
 }
 .e-mail:hover{
     color:#2196F3;
@@ -92,7 +94,7 @@ body{
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    padding-left: 25px;
+    margin-left: 25px;
 }
 .phone-number:hover{
     color:#2196F3;
@@ -101,15 +103,13 @@ body{
 
 .footer{
     background-color:  #2F303A;
-        display: inline-flex;
-    }
-.footer-section{
     display: flex;
     flex-direction: column;
     align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
-}
+    }
+
 .logo-footer{
     text-decoration: none;
     color: black;
@@ -257,12 +257,12 @@ body{
 
     /* sekcja "efektywne rozwiązania */
 .service-section{
-    background: #2F303A;
+background: #2F303A;
    height: 600px;
    display:flex;
-   flex-direction: column;
    justify-content: center;
    align-items: center;
+   
     }
 
 .main-title{
@@ -275,6 +275,8 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin: 0 auto;
+    
     }
 
 .order-button{
@@ -285,6 +287,7 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0px;
+    margin-top: 30px;
     /*text in botton*/
     font-weight: 700;
     font-size: 16px;
@@ -300,6 +303,7 @@ body{
     list-style-type: none;
     display: flex;
     gap: 30px;
+    padding: 0px;
 }
 
 .title{
@@ -327,18 +331,19 @@ body{
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin: 0px;
+    margin-bottom: 50px;
 }
-.profession{
-    padding-left: 30px;
-}
+
 
 .photo-profession{
     list-style-type: none;
     mix-blend-mode: normal;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0px;
     margin: 0px;
+    
 }
 
 /* sekcja "Nasz zespół" */
