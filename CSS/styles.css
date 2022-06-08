@@ -165,8 +165,8 @@ body{
     justify-content: center;
     margin: 0px;
     padding: 0px;
-    padding-top: 100px;
     }
+
 .filtr{
     background-color:#F5F4FA;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -213,13 +213,18 @@ body{
     flex-wrap: wrap;
     padding: 0px;
     margin: 0px;
+    justify-content: space-between;
+    }
+
+.nav-button{
+    margin-bottom: 50px;
     
 }
-.product{
-    flex-basis: calc((100%-60px)/3);
-}
 .name-product{
+    display: flex;
+    flex-direction: column;
     padding-top: 20px;
+    padding-left: 24px;
 }
 .project{
     box-sizing: border-box;
@@ -230,6 +235,7 @@ body{
     margin: 0px;
     padding: 0px;
     margin-bottom: 30px;
+    
 }
 .project-name{
     width: 322px;
@@ -257,13 +263,20 @@ body{
 
     /* sekcja "efektywne rozwiązania */
 .service-section{
-background: #2F303A;
+   background: #2F303A;
    height: 600px;
    display:flex;
    justify-content: center;
    align-items: center;
-   
-    }
+   }
+.title-and-button{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+}
 
 .main-title{
     color: #FFFFFF;
@@ -275,9 +288,8 @@ background: #2F303A;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin: 0 auto;
-    
     }
+
 
 .order-button{
     /*botton*/
@@ -295,6 +307,8 @@ background: #2F303A;
     letter-spacing: 0.06em;
     color:#FFFFFF;
     cursor: pointer;
+    
+    padding: 0px;   
     }
 
 
@@ -304,6 +318,7 @@ background: #2F303A;
     display: flex;
     gap: 30px;
     padding: 0px;
+    margin: 0px;
 }
 
 .title{
@@ -315,8 +330,7 @@ background: #2F303A;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.text{
-    
+.text{    
     height: 75px;
     font-size: 14px;
     line-height: 24px;
@@ -352,22 +366,23 @@ background: #2F303A;
     background: #F5F4FA;
     height: 648px;
 }
-.section-title{
+.our-team{
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin: 0px;
+    margin-bottom: 50px;
 }
 .team{
     list-style: none;
     display: flex;
+    justify-content: space-between;
     padding: 0px;
+    margin: 0px;
 }
-.team-person{
-    width: 270px;
-    margin-right: 30px;
-}
+
 
 .person{
     height: 368px;
@@ -380,9 +395,7 @@ background: #2F303A;
 .name-and-position {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    margin: auto;
-    justify-content: center;
+    text-align: center;
 }
 .name{
     font-weight: 500;
